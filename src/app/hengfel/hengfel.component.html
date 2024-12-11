@@ -1,0 +1,40 @@
+
+<!--File: hengfel.component.html
+Author: Bogdán Csaba Rómeó
+ Copyright: 2024, Bogdán Csaba Rómeó
+ Group: SzoftII/E
+ Date: 2024.12.11
+ Github: https://github.com/BogdanCsaba2000
+ Licenc: MIT
+-->
+<h1>Kör alapú henger</h1>
+
+
+
+<p>Kör alapú henger területének számítása</p>
+
+<div class="hengfelForm">
+
+<div class="form-group">
+    <label for="r">r</label>
+    <input type="number" class="form-control"
+    id="r" [(ngModel)]='r'>
+</div>
+
+<div class="form-group">
+    <label for="h">h</label>
+    <input type="number" class="form-control"
+    id="h" [(ngModel)]= 'h'>
+</div>
+
+<div>
+    <button class="btn btn-primary my-3" (click)='startCalc()'>Számítás</button>
+</div>
+
+<div class="input-group">
+    <span class="input-group-text" >Felszín</span>
+    <input type="text" class="form-control" id="area"  [(ngModel)]= "area">
+    <span class="input-group-text">cm<sup>2</sup></span>
+
+  
+</div>
